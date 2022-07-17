@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+}
+body{
+    background: linear-gradient(270deg, #02040B 0%, #03050F 51.45%, #010307 100%);
+}
+
+.center{
+    width: 70%;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.nav{
+    padding: 30px 0;
+}
+.logo .text{
+    padding: 10px;
+}
+.logo img{
+    width: 80px;
+}
+.logo .title p{
+    color:white;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    }
+.logo .description p{
+    color:#2B9DCC;
+    font-style: normal;
+    font-weight: 600;
+    font-size:25px;
+}
+.first_section{
+    height: 900px;
+
+    background-color: rgb(0,0,0,0.8);
+  display: block;
+position: relative;
+}
+
+.first_section::after{
+    content: "";
+    background-image: url('assets/3d-earth-graphic-symbolizing-global-trade-illustration_456031-129.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;   
+  }
+
+  .body_title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 79px;
+    text-align: center;
+    color: white;
+
+    margin-top: 15vh;
+  }
+
+  .body_title .blue{
+    color: #2B9DCC;
+  }
+
+  .advantages{
+      margin-top: 150px;
+      justify-content: space-between;
+  }
+  .advantages p{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 46px;
+    text-align: center;
+    
+    color: #FFFFFF;
+  }
+ 
+
+ .files{
+     margin: 100px 0;
+      
+    /* height: 300px;
+    background-image: url('assets/wave.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* background-color: rgb(0,0,0,0.1); */
+  /* display: block;
+position: relative; */
+}
+
+/* .wave img{
+    margin-top: -230px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+} */
+
+.file{
+    background-color: #2B4046;
+
+    padding: 30px;
+    border-radius: 15px;
+
+    width: 49%;
+}
+
+.file_info{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.file_download{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.file_download form{
+    width: 95%;
+}
+.file_info > div{
+    width: 100%;
+}
+.file .img img{
+    width: 150px;
+}
+.file .img{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+    margin-right: 20px;
+}
+
+.col{
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.file button{
+    border:none;
+    background-color: #2174FE;
+    font-style: normal;
+    font-weight: 000;
+    font-size: 18px; 
+    line-height: 15px;
+/* identical to box height */
+
+width: 100%;
+
+    color: #F7F9FB;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+}
+
+.file_title{
+    font-style: normal;
+font-weight: 800;
+font-size: 23px;
+line-height: 31px;
+color: #C7E2EA;
+}
+
+.file_category,.file_review{
+    font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+color: #9EAEB3;
+}
+
+.footer{
+    margin-top: 30px;
+    padding: 30px 0;
+    background-color: #212121;
+}
+.footer_inner{
+    text-align: left;
+}
+.footer_inner div{
+    width: 50%;
+}
+.footer p{
+    font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 20px;
+
+color: #838383;
+}
+.footer_p_first{
+
+    margin-bottom: 30px;
+}
+.file_title,.file_category,.file_review{
+    margin-bottom: 5px;
+}
+
+.files .col{
+    flex-wrap: wrap;
+}
+.files .file{
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 1360px) {
+    .center{
+        width: 90%;
+    } 
+}
+
+@media only screen and (max-width: 1000px) {
+    .center{
+        width: 100%;
+    }
+    .col{
+        display: block;
+    }
+
+    .file{
+        text-align: center;
+        width: 100%;
+        margin: 15px 0;
+    }
+    .files{
+        margin: 60px 15px;
+    }
+
+    .advantages{
+        display: block;
+        margin: 20px 0 50px 0;
+    }
+    .advantages > div{
+        margin: 20px 0;
+    }
+
+    .footer_inner {
+        padding:20px 40px;
+    }
+
+    .footer_inner div {
+        width: 100%;
+    }
+
+    .file .img img{
+        width: 110px;
+    }
+    .file{
+        display: block;
+        
+    }
+    .file_info{
+        width: 100%;
+    }
+
+    .file .img{
+        margin-bottom: 15px;
+    }
+    .file_review{
+        justify-content: center;
+    }
+}
